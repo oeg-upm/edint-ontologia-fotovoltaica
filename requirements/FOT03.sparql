@@ -1,4 +1,4 @@
-# FOT03: ¿Cuál es la energía generada por cada instalación fotovoltaica de una división adeministrativa durante un periodo de tiempo?
+# FOT03: ¿Cuál es la energía generada por cada instalación fotovoltaica durante un periodo de tiempo?
 
 PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX sosa:     <http://www.w3.org/ns/sosa/>
