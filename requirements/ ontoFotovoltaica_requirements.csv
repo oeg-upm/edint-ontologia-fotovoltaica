@@ -1,0 +1,19 @@
+Identifier,Responsible partner,"Version (optional)
+","Competency Question /
+ Natural language sentence (fact)",Answer (For Competency Questions),"Status (Proposed, Accepted, Rejected, Deprecated)","Use case
+(UC02-001, UC01-002, UC01-006, UC01-007)",Comments (optional),Extracted from (provenance),"Priority 
+(High, Medium, Low) (optional)",Relation with other requirements (optional),Associated ontology elements,Relation to ontology elements in other domains
+FOT01,UPM,v0.1.0,"¿Dispone el edificio de sistemas de generación de energía renovable (placas solares, geotermia, biomasa)?",,Deprecated,,Versión simplificada sugerida en FOT012,,,,,
+FOT02,UPM,v0.1.0,¿Cuál es la energía generada (en un intervalo de tiempo) por todas las instalaciones fotovoltaicas asociadas a un elemento de infraestructura o división administrativa (expresada en kWh)? Sugerencia simplificada: ¿Cuál es la energía generada por el conjunto de instalaciones fotovoltaicas asociadas a un elemento de infraestructura?,,Deprecated,,Actualizado en FOT13,,,,,
+FOT03,UPM,v0.1.0,¿Cuál es la energía generada por cada instalación fotovoltaica de una división adeministrativa durante un periodo de tiempo?,,Proposed,,¿Energía media para KPI?,,,,,
+FOT04,UPM,v0.1.0,¿Cuál es la energía generada por las intalaciones fotovoltaicas de un elemento de infraestructura en cada estación del año?,,Deprecated,,"La ontologia no modela estaciones de año como tal, ",,,,,
+FOT05,UPM,v0.1.0,¿Cuál es la relación entre la producción fotovoltaica y el consumo energético del elemento de infraestructura o división administrativa (expresada como porcentaje del consumo cubierto?,,Deprecated,,"¿Para KPI? 
+Esta pregunta solo es válida si se integra la ontologia de suministros con la ontologia de fotovoltaica, ¿no?",,,,,
+FOT06,UPM,v0.1.0,¿Qué medidor fotovoltaico ha realizado cada observación de generación registrada?,,Proposed,,,,,,,
+FOT07,UPM,v0.1.0,¿A qué instalación fotovoltaica corresponde cada observación de generación?,,Proposed,,,,,,,
+FOT08,UPM,v0.1.0,¿Cual es el estado operativo de la instalación fotovoltaica?,,Proposed,,,,,,,
+FOT09,UPM,v0.1.0,¿Cuál es el tipo de uso asociado a la instalación fotovoltaica?,,Proposed,,,,,,,
+FOT10,UPM,v0.1.0,¿Quien es el fabricante del medidor fotovoltaico?,,Proposed,,,,,,,
+FOT11,UPM,v0.1.0,¿Cuál es el periodo temporal asociado a cada observación de generación fotovoltaica?,,Proposed,,,,,,,
+FOT12,UPM,v0.1.0,¿Dispone el elemento de infraestructura/edificio de una o varias instalaciones fotovoltaicas asociadas?,,Proposed,,Otra versión de la FOT01,,,,,
+FOT13,UPM,v0.1.0,Sugerencia simplificada: ¿Cuál es la energía generada por el conjunto de instalaciones fotovoltaicas asociadas a un elemento de infraestructura?,,Proposed,,Simplificación de FOT02,,,,,

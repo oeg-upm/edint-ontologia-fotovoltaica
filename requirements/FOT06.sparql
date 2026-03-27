@@ -1,0 +1,13 @@
+# FOT06: ¿Qué medidor fotovoltaico ha realizado cada observación de generación registrada?
+
+PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX sosa:     <http://www.w3.org/ns/sosa/>
+PREFIX edintfot: <http://vocab.linkeddata.es/datosabiertos/def/energia-medioambiente/fotovoltaica#>
+
+SELECT ?observation ?meter
+WHERE {
+  ?observation a edintfot:PhotovoltaicGeneration ;
+               sosa:madeBySensor ?meter .
+  ?meter a edintfot:PhotovoltaicMeter .
+}
+ORDER BY ?observation

@@ -1,0 +1,18 @@
+# FOT07: ¿A qué instalación fotovoltaica corresponde cada observación de generación?
+
+PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX sosa:     <http://www.w3.org/ns/sosa/>
+PREFIX edintfot: <http://vocab.linkeddata.es/datosabiertos/def/energia-medioambiente/fotovoltaica#>
+
+SELECT ?observation ?pvSystem
+WHERE {
+  ?observation a edintfot:PhotovoltaicGeneration ;
+               sosa:hasFeatureOfInterest ?pvSystem .
+  ?pvSystem a edintfot:PhotovoltaicSystem .
+}
+ORDER BY ?observation
+
+
+
+
+

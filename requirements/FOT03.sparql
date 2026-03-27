@@ -1,0 +1,29 @@
+# FOT03: ¿Cuál es la energía generada por cada instalación fotovoltaica durante un periodo de tiempo?
+
+PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX sosa:     <http://www.w3.org/ns/sosa/>
+PREFIX time:     <http://www.w3.org/2006/time#>
+PREFIX qudt:     <http://qudt.org/schema/qudt/>
+PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
+PREFIX edintfot: <http://vocab.linkeddata.es/datosabiertos/def/energia-medioambiente/fotovoltaica#>
+
+SELECT ?pvSystem (SUM(?value) AS ?generatedEnergy)
+WHERE {
+  ?observation a edintfot:PhotovoltaicGeneration ;
+               sosa:hasFeatureOfInterest ?pvSystem ;
+               sosa:hasResult ?result ;
+               sosa:phenomenonTime ?timeEntity .
+
+  ?result qudt:numericValue ?value .
+  ?timeEntity time:hasBeginning/time:inXSDDateTimeStamp ?begin .
+
+  FILTER(
+    ?begin >= "2026-01-01T00:00:00Z"^^xsd:dateTimeStamp &&
+    ?begin <  "2026-02-01T00:00:00Z"^^xsd:dateTimeStamp
+  )
+}
+GROUP BY ?pvSystem
+ORDER BY ?pvSystem
+
+
+
