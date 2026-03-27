@@ -1,0 +1,13 @@
+# FOT12: ¿Dispone el elemento de infraestructura/edificio de una o varias instalaciones fotovoltaicas asociadas?
+
+PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX edintfot: <http://vocab.linkeddata.es/datosabiertos/def/energia-medioambiente/fotovoltaica#>
+PREFIX edintinf: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#>
+
+SELECT DISTINCT ?infrastructure
+WHERE {
+  ?infrastructure a edintinf:InfrastructureElement ;
+                  edintfot:hasPhotovoltaicSystem ?pvSystem .
+  ?pvSystem a edintfot:PhotovoltaicSystem .
+}
+ORDER BY ?infrastructure

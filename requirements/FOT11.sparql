@@ -1,0 +1,11 @@
+# FOT11: ¿Cuál es el periodo temporal asociado a cada observación de generación fotovoltaica?
+
+PREFIX sosa:     <http://www.w3.org/ns/sosa/>
+PREFIX edintfot: <http://vocab.linkeddata.es/datosabiertos/def/energia-medioambiente/fotovoltaica#>
+
+SELECT ?observation ?timeEntity
+WHERE {
+  ?observation a edintfot:PhotovoltaicGeneration ;
+               sosa:phenomenonTime ?timeEntity .
+}
+ORDER BY ?observation

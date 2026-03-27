@@ -1,0 +1,21 @@
+# FOT02: ¿Cuál es la energía generada por el conjunto de instalaciones fotovoltaicas asociadas a un elemento de infraestructura?
+
+PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX sosa:     <http://www.w3.org/ns/sosa/>
+PREFIX qudt:     <http://qudt.org/schema/qudt/>
+PREFIX edintfot: <http://vocab.linkeddata.es/datosabiertos/def/energia-medioambiente/fotovoltaica#>
+PREFIX edintinf: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#>
+
+SELECT ?infrastructure (SUM(?value) AS ?totalGeneratedEnergy)
+WHERE {
+  ?infrastructure a edintinf:InfrastructureElement ;
+                  edintfot:hasPhotovoltaicSystem ?pvSystem .
+
+  ?observation a edintfot:PhotovoltaicGeneration ;
+               sosa:hasFeatureOfInterest ?pvSystem ;
+               sosa:hasResult ?result .
+
+  ?result qudt:numericValue ?value .
+}
+GROUP BY ?infrastructure
+ORDER BY ?infrastructure
