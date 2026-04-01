@@ -28,11 +28,12 @@ El repositorio contiene los siguientes directorios:
 | **requirements/** | Contains all documents used to define the ontology’s requirements: data example, competency questions, functional requirements, use cases, etc. |
 | **shapes/** | Contains the SHACL shapes used to define and validate ontology constraints. |
 
-# # Mantenimiento y evolución (Maintenance and evolution)
+# Mantenimiento y evolución (Maintenance and evolution)
 
-Para manejar las incidencias o mejoras sugeridas con respecto a la ontología, recomendamos seguir las guía proporcionadas en ([Issues Management](https://github.com/telefonicasc/edint-ontologia-fotovoltaica/issues)) para generar una incidencia (trabajo en progreso).
+Para manejar las incidencias o mejoras sugeridas con respecto a la ontología, recomendamos seguir las guías proporcionadas en ([Issues Management](./ISSUES.md)) para generar una incidencia.
 
 # Financiación (Funding)
 
 Esta ontología ha sido desarrollada en el contexto del Espacio de Datos para las Infraestructuras Urbanas Inteligentes ([EDINT](https://edint.es)).
 
+![Logos](EDINT_UE_V-Color.png)
