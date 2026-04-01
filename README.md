@@ -1,30 +1,22 @@
-# XXX Ontology
+# Ontología de Instalación Fotovoltaica (Ontology of Photovoltaic System)
 
-The XXX ontology describes the domain of XXX
+La ontología de instalaciones fotovoltaicas describe todos los conceptos relacionados con las instalaciones de este tipo que se encuentran en los elementos de la infraestructura de un municipio y la medición de la generación, consumo, acumulación y vertido de electricidad en la red.
 
 
-# Purpose and scope of the vocabulary
+# Propósito y alcance de la ontología (Purpose and scope of the ontology)
 
-The purpose of the XXX ontology is to YYYY. 
-The scope of the XXX ontology is limited to ZZZ.
+El propósito de esta ontología es el de proporcionar un vocabulario común para la representación de los conceptos relacionados con las instalaciones fotovoltaicas que se encuentran en los elementos de la infraestructura de un municipio y la medición de la generación, consumo, acumulación y vertido de electricidad en la red realizada por estas instalaciones.
 
-# Ontology prefix and namespace
+# Prefijo y espacio de nombres (Prefix and namespace)
+El prefijo de la ontología de Instalación fotovoltaica es: edintfotov y es publicada en el espacio de nombres: [http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#](http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/fotovoltaica#) 
 
-The XXX ontology prefix is: XXX and it is published under the namespace: https://webdomain.ext/def/domain/subdomain# 
+# Modelo conceptual (Ontology conceptualization)
+![Modelo conceptual](diagrams/diagrama-conceptual.png)
 
-# Ontology Conceptualization Image
+# Estructura del repositorio (Repository structure)
 
-Every ontology development repository should include, in this root README, a visual representation of the ontology conceptualization.
-This image helps users and contributors quickly understand the ontology’s structure, key concepts, and relationships.
-- The image should be located in the conceptualization folder.
-- Accepted formats: .svg, .png, or .drawio.
-- It should be referenced in this README using Markdown syntax, for example:
+El repositorio contiene los siguientes directorios:
 
-![Ontology Conceptualization Diagram](diagrams/diagram.png)
-
-# Reposity structure
-
-The repository should contain (at least) the following folders:
 
 | Folder | Description |
 |--------|--------------|

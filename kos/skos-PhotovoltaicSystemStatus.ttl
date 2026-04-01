@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix edintkos: <http://vocab.linkeddata.es/datosabiertos/kos/edint/> .
+@prefix edintphotovstatus: <http://vocab.linkeddata.es/datosabiertos/kos/edint/PhotovoltaicSystemStatus/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+edintkos:PhotovoltaicSystemStatus a skos:ConceptScheme ; 
+    dct:issued "2026-03-23"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the ontologies from the EDINT data space."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por las ontologías del espacio de datos EDINT."@es ;
+    rdfs:label "Estado de la instalación fotovoltaica"@en ;
+    rdfs:label "Photovoltaic system status"@es ;
+    dct:title "Concept scheme grouping the status types of photovoltaic systems."@en ;
+    dct:title "Esquema de conceptos agrupando tipos de estado de las instalaciones fotovoltaicas."@es .
+    
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+edintphotovstatus:outofservice a skos:Concept;
+  skos:inScheme edintkos:PhotovoltaicSystemStatus;
+  skos:prefLabel "Fuera de servicio"@es ;
+  skos:prefLabel "Out of service"@en .
+
+edintphotovstatus:operative a skos:Concept;
+  skos:inScheme edintkos:PhotovoltaicSystemStatus;
+  skos:prefLabel "Operativo"@es ;
+  skos:prefLabel "operative"@en .
+
+edintphotovstatus:partial a skos:Concept;
+  skos:inScheme edintkos:PhotovoltaicSystemStatus;
+  skos:prefLabel "Parcial"@es ;
+  skos:prefLabel "Partial"@en .
+
