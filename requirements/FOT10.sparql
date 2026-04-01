@@ -1,0 +1,12 @@
+# FOT10: ¿Quién es el fabricante del medidor fotovoltaico?
+
+PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX schema:   <https://schema.org/>
+PREFIX edintfot: <http://vocab.linkeddata.es/datosabiertos/def/energia-medioambiente/fotovoltaica#>
+
+SELECT ?meter ?manufacturer
+WHERE {
+  ?meter a edintfot:PhotovoltaicMeter ;
+         schema:manufacturer ?manufacturer .
+}
+ORDER BY ?meter

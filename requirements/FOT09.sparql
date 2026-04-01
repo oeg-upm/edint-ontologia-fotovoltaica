@@ -1,0 +1,13 @@
+# FOT09: ¿Cuál es el tipo de uso asociado a la instalación fotovoltaica?
+
+PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
+PREFIX edintfot: <http://vocab.linkeddata.es/datosabiertos/def/energia-medioambiente/fotovoltaica#>
+
+SELECT ?pvSystem ?usageType ?usageLabel
+WHERE {
+  ?pvSystem a edintfot:PhotovoltaicSystem ;
+            edintfot:hasUsageType ?usageType .
+  OPTIONAL { ?usageType skos:prefLabel ?usageLabel . }
+}
+ORDER BY ?pvSystem
